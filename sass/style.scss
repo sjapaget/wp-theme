@@ -1,7 +1,7 @@
 /*!
 Theme Name: ridiy
-Theme URI: Samuel Paget
-Author: Underscores.me
+Theme URI:
+Author: Samuel  Paget
 Author URI:
 Description: Learning theme for WordPress
 Version: 1.0.0
@@ -100,3 +100,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /* Alignments
 --------------------------------------------- */
 @import "utilities/alignments";
+
+main {
+	color: $color__background-body;
+}
