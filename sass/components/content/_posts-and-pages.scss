@@ -21,3 +21,10 @@
 	clear: both;
 	margin: 0 0 1.5em;
 }
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
