@@ -2,20 +2,35 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid;
+	border: solid transparent;
 	border-color: $color__border-button;
-	border-radius: 3px;
+	border-radius: 6px;
 	background: $color__background-button;
-	color: rgba(0, 0, 0, 0.8);
 	line-height: 1;
+	margin: 1em;
 	padding: 0.6em 1em 0.4em;
 
-	&:hover {
-		border-color: $color__border-button-hover;
-	}
+
 
 	&:active,
 	&:focus {
 		border-color: $color__border-button-focus;
 	}
 }
+
+.wp-block-button__link {
+	color: $color__text-button;
+	background-color: $color__background-button;
+	border-radius: 6px;
+
+}
+
+
+
+.wp-block-button:hover {
+	border-radius: 6px; ;
+	color: $color__text-button-hover;
+	background-color: $color__background-button-hover;
+}
+
+
