@@ -748,11 +748,12 @@ textarea {
 	margin: 0 0 1.5em;
 }
 
-main {
+.site-main {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 }
 
 /* Comments
