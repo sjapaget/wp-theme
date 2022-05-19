@@ -3,6 +3,7 @@ Theme Name: ridiy
 
 WooCommerce styles override
 */
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Concert+One&display=swap");
 /**
  * Shop tables
  */
@@ -326,14 +327,14 @@ p.stars a::before {
 	line-height: 1;
 	font-family: star;
 	content: "\53";
-	color: #404040;
+	color: #f1f1f1;
 	text-indent: 0;
 	opacity: 0.25;
 }
 
 p.stars a:hover ~ a::before {
 	content: "\53";
-	color: #404040;
+	color: #f1f1f1;
 	opacity: 0.25;
 }
 
@@ -351,7 +352,7 @@ p.stars.selected a.active::before {
 
 p.stars.selected a.active ~ a::before {
 	content: "\53";
-	color: #404040;
+	color: #f1f1f1;
 	opacity: 0.25;
 }
 

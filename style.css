@@ -48,6 +48,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	- Alignments
 
 --------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Concert+One&display=swap");
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
@@ -387,8 +388,8 @@ input,
 select,
 optgroup,
 textarea {
-	color: #404040;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	color: #f1f1f1;
+	font-family: "Abel", sans-serif;
 	font-size: 1rem;
 	line-height: 1.5;
 }
@@ -422,7 +423,7 @@ address {
 }
 
 pre {
-	background: #eee;
+	background: #EDE6DB;
 	font-family: "Courier 10 Pitch", courier, monospace;
 	line-height: 1.6;
 	margin-bottom: 1.6em;
@@ -446,7 +447,7 @@ acronym {
 
 mark,
 ins {
-	background: #fff9c0;
+	background: #EDE6DB;
 	text-decoration: none;
 }
 
@@ -457,7 +458,7 @@ big {
 /* Elements
 --------------------------------------------- */
 body {
-	background: #0aeb42;
+	background: #417D7A;
 }
 
 hr {
@@ -543,20 +544,13 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid;
-	border-color: #ccc #ccc #bbb;
-	border-radius: 3px;
-	background: #e6e6e6;
-	color: rgba(0, 0, 0, 0.8);
+	border: solid transparent;
+	border-color: #EDE6DB;
+	border-radius: 6px;
+	background: #EDE6DB;
 	line-height: 1;
+	margin: 1em;
 	padding: 0.6em 1em 0.4em;
-}
-
-button:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover {
-	border-color: #ccc #bbb #aaa;
 }
 
 button:active, button:focus,
@@ -567,6 +561,18 @@ input[type="reset"]:focus,
 input[type="submit"]:active,
 input[type="submit"]:focus {
 	border-color: #aaa #bbb #bbb;
+}
+
+.wp-block-button__link {
+	color: #f1f1f1;
+	background-color: #EDE6DB;
+	border-radius: 6px;
+}
+
+.wp-block-button:hover {
+	border-radius: 6px;
+	color: #417D7A;
+	background-color: #EDE6DB;
 }
 
 input[type="text"],
@@ -585,7 +591,7 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-	color: #666;
+	color: #f1f1f1;
 	border: 1px solid #ccc;
 	border-radius: 3px;
 	padding: 3px;
@@ -607,7 +613,7 @@ input[type="datetime"]:focus,
 input[type="datetime-local"]:focus,
 input[type="color"]:focus,
 textarea:focus {
-	color: #111;
+	color: #f1f1f1;
 }
 
 select {
@@ -740,6 +746,13 @@ textarea {
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 /* Comments
@@ -890,7 +903,7 @@ textarea {
 	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 	clip: auto !important;
 	clip-path: none;
-	color: #21759b;
+	color: #f1f1f1;
 	display: block;
 	font-size: 0.875rem;
 	font-weight: 700;
@@ -933,10 +946,6 @@ textarea {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 1.5em;
-}
-
-main {
-	color: #0aeb42;
 }
 
 /*# sourceMappingURL=style.css.map */
