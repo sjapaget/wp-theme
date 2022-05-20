@@ -1,6 +1,11 @@
+//Hide site branding as unused for now
+.site-branding {
+	display: none;
+}
 .main-navigation {
 	display: block;
 	width: 100%;
+	top: 0; //put nav bar at the top as site-branding is removed
 
 	ul {
 		display: none;
@@ -40,6 +45,7 @@
 
 			a:hover,
 			a.focus {
+				
 			}
 		}
 
@@ -60,6 +66,7 @@
 	a {
 		display: block;
 		text-decoration: none;
+		color: $color__text-nav-item;
 	}
 
 	.current_page_item > a,
@@ -69,10 +76,39 @@
 	}
 }
 
+
+.nav-menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	background-color: $color__background-alt;
+}
+
+.menu-item a {
+	padding: 0 1em;
+	
+	
+}
+
+@keyframes navHighlight {	
+	100% {
+		background-color: $color__text-nav-item;
+		color: $color__background-alt;;
+	}
+}
+
+.menu-item a:hover {
+	animation-name: navHighlight;
+	animation-duration: 0.3s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
+	color: $color__background-body;
 }
 
 @media screen and (min-width: 37.5em) {
@@ -83,7 +119,7 @@
 
 	.main-navigation ul {
 		display: flex;
-	}
+	}	
 }
 
 .comment-navigation,
