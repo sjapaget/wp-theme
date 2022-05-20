@@ -47,11 +47,26 @@ function ridiy_setup() {
 	add_theme_support( 'post-thumbnails' );
 
 	// This theme uses wp_nav_menu() in one location.
-	register_nav_menus(
+	function register_my_menus() {
+		register_nav_menus(
+			array(
+				'menu-1' => esc_html__( 'Primary', 'ridiy' ),
+				'menu-2' => esc_html__( 'Secondary', 'ridiy' ),
+			)
+			);
+	}
+	add_action( 'init', 'register_my_menus' );
+
+/* Commented out in favour of function above adding multiple menus
+	
+register_nav_menus(
 		array(
 			'menu-1' => esc_html__( 'Primary', 'ridiy' ),
+			'menu-2' => esc_html__( 'Secondary', 'ridiy' ),
 		)
 	);
+
+	*/
 
 	/*
 		* Switch default core markup for search form, comment form, and comments
