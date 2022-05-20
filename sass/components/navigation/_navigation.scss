@@ -5,8 +5,7 @@
 .main-navigation {
 	display: block;
 	width: 100%;
-	top: 0; //put nav bar at the top as site-branding is removed
-
+	position: fixed;
 	ul {
 		display: none;
 		list-style: none;
