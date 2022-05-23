@@ -519,15 +519,15 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-	color: #4169e1;
+	color: #417D7A;
 }
 
 a:visited {
-	color: #800080;
+	color: #417D7A;
 }
 
 a:hover, a:focus, a:active {
-	color: #191970;
+	color: #417D7A;
 }
 
 a:focus {
@@ -673,11 +673,6 @@ textarea {
 	width: 200px;
 }
 
-.main-navigation ul li:hover > ul,
-.main-navigation ul li.focus > ul {
-	left: auto;
-}
-
 .main-navigation li {
 	position: relative;
 }
@@ -754,6 +749,15 @@ textarea {
 	flex: 1 0 50%;
 }
 
+.site-footer {
+	background-color: #EDE6DB;
+	color: #417D7A;
+}
+
+.menu-footer-container ul {
+	list-style: none;
+}
+
 /* Posts and pages
 --------------------------------------------- */
 .sticky {
@@ -762,7 +766,7 @@ textarea {
 
 .post,
 .page {
-	margin: 0 0 1.5em;
+	margin: 0 0;
 }
 
 .updated:not(.published) {
@@ -785,6 +789,7 @@ textarea {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	align-items: center;
 	text-align: center;
 }
 
@@ -797,6 +802,8 @@ textarea {
 	border-radius: 15px;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	justify-content: space-between;
 	align-items: center;
 	width: 90vw;

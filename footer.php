@@ -12,6 +12,12 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
+		
+			<?wp_nav_menu( 
+					array( 
+						'theme_location' => 'menu-2', 
+						) ); ?>
+		
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'ridiy' ) ); ?>">
 				<?php
@@ -25,10 +31,6 @@
 				printf( esc_html__( 'Theme: %1$s by %2$s.', 'ridiy' ), 'ridiy', '<a href="https://github.com/sjapaget/wp-theme">Samuel Paget</a>' );
 				?>
 		</div><!-- .site-info -->
-		<?wp_nav_menu( 
-			array( 
-				'theme_location' => 'menu-2', 
-				) ); ?>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

@@ -4,7 +4,7 @@
 
 .post,
 .page {
-	margin: 0 0 1.5em;
+	margin: 0 0;
 }
 
 .updated:not(.published) {
@@ -23,9 +23,7 @@
 }
 
 .site-main {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	@include flex-column;
 	align-items: center;
 	text-align: center;
 }
@@ -37,8 +35,7 @@
 .card {
 	background: radial-gradient(#3a706d 30%, #305d5b);
     border-radius: 15px;
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     justify-content: space-between;
     align-items: center;
     width: 90vw;
