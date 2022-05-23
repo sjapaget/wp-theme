@@ -27,7 +27,7 @@
 		</div><!-- .site-info -->
 		<?wp_nav_menu( 
 			array( 
-				'theme_location' => 'Secondary', 
+				'theme_location' => 'menu-2', 
 				) ); ?>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
