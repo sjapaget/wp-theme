@@ -470,7 +470,8 @@ hr {
 
 ul,
 ol {
-	margin: 0 0;
+	margin: 0;
+	padding: 0;
 	text-align: center;
 }
 
@@ -675,7 +676,6 @@ textarea {
 }
 
 .main-navigation a {
-	display: block;
 	text-decoration: none;
 	color: #417D7A;
 }
@@ -689,6 +689,7 @@ textarea {
 
 .menu-item a {
 	padding: 0 1em;
+	border-radius: 6px;
 }
 
 @keyframes navHighlight {
@@ -752,6 +753,11 @@ textarea {
 }
 
 .menu-footer-container ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	justify-content: space-evenly;
 	list-style: none;
 }
 
