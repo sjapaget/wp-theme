@@ -706,6 +706,15 @@ textarea {
 	animation-fill-mode: forwards;
 }
 
+.main-navigation {
+	z-index: 999;
+}
+
+.menu-menu-container {
+	position: relative;
+	top: 0px;
+}
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -802,13 +811,10 @@ textarea {
 }
 
 .site-main {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	align-items: center;
 	text-align: center;
-	height: auto;
+	position: relative;
+	top: 6vh;
+	margin: 10px 0;
 }
 
 .entry-title {

@@ -78,6 +78,17 @@
 	animation-fill-mode: forwards;
 }
 
+.main-navigation {
+	z-index: 999;
+}
+
+.menu-menu-container {
+	position: relative;
+	top: 0px;
+	
+}
+
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
