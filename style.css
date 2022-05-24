@@ -633,10 +633,6 @@ textarea {
 --------------------------------------------------------------*/
 /* Navigation
 --------------------------------------------- */
-.site-branding {
-	display: none;
-}
-
 .main-navigation {
 	display: block;
 	width: 100%;
@@ -792,6 +788,13 @@ textarea {
 	margin: 0 0 1.5em;
 }
 
+.site {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100vh;
+}
+
 .site-main {
 	display: flex;
 	flex-direction: column;
@@ -799,6 +802,7 @@ textarea {
 	align-items: center;
 	align-items: center;
 	text-align: center;
+	height: auto;
 }
 
 .entry-title {
@@ -826,7 +830,6 @@ textarea {
 @media (max-width: 767px) {
 	.entry-title {
 		position: relative;
-		left: 10vw;
 		font-size: 1.6em;
 	}
 }

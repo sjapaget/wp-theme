@@ -22,10 +22,18 @@
 	margin: 0 0 1.5em;
 }
 
+.site {
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
 .site-main {
 	@include flex-column;
 	align-items: center;
 	text-align: center;
+	height: auto;
 }
 
 .entry-title {
@@ -50,7 +58,6 @@
 @media (max-width: 767px) {
 	.entry-title {
 		position: relative;
-		left: 10vw;
 		font-size: 1.6em;
 	}
 }
