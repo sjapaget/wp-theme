@@ -707,12 +707,22 @@ textarea {
 }
 
 .main-navigation {
-	z-index: 999;
+	z-index: 99;
 }
 
 .menu-menu-container {
-	position: relative;
+	position: absolute;
 	top: 0px;
+	right: 0px;
+	width: 66vw;
+}
+
+.menu-menu-container ul {
+	border-radius: 0 0 0 6px;
+}
+
+.menu-menu-container ul li {
+	margin: 0 0 0.5em;
 }
 
 /* Small menu. */

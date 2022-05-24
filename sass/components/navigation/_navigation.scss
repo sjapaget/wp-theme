@@ -79,13 +79,24 @@
 }
 
 .main-navigation {
-	z-index: 999;
+	z-index: 99;
 }
 
 .menu-menu-container {
-	position: relative;
+	position: absolute;
 	top: 0px;
+	right: 0px;
+	width: 66vw;
 	
+	ul {
+		border-radius: 0 0 0 6px;
+		
+		li {
+			margin: 0 0 0.5em;
+		}
+	}
+
+
 }
 
 
