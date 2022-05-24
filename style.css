@@ -470,7 +470,8 @@ hr {
 
 ul,
 ol {
-	margin: 0 0 1.5em 3em;
+	margin: 0 0;
+	text-align: center;
 }
 
 ul {
@@ -756,6 +757,13 @@ textarea {
 
 .menu-footer-container ul {
 	list-style: none;
+}
+
+.site-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 /* Posts and pages

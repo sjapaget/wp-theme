@@ -122,14 +122,16 @@
 
 
 //Footer menu SCSS
-
 .site-footer {
     background-color: $color__background-alt;
     color: $color__text-nav-item;
 }
 
-
 .menu-footer-container ul {
 	list-style: none;
 }
 
+.site-info {
+	@include flex-column;
+	
+}
