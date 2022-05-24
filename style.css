@@ -710,19 +710,19 @@ textarea {
 	z-index: 99;
 }
 
-.menu-menu-container {
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	width: 66vw;
-}
-
-.menu-menu-container ul {
-	border-radius: 0 0 0 6px;
-}
-
-.menu-menu-container ul li {
-	margin: 0 0 0.5em;
+@media (max-width: 767px) {
+	.menu-menu-container {
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		width: 66vw;
+	}
+	.menu-menu-container ul {
+		border-radius: 0 0 0 6px;
+	}
+	.menu-menu-container ul li {
+		margin: 0 0 0.5em;
+	}
 }
 
 /* Small menu. */
