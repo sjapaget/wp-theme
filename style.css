@@ -845,6 +845,13 @@ textarea {
 	padding: 1em;
 }
 
+.card .wp-block-group__inner-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 .card__title {
 	font-family: "Concert One", cursive;
 }

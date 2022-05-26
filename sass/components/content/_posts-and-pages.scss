@@ -49,6 +49,10 @@
     width: 90vw;
     margin: 1em 1em;
     padding: 1em;
+
+	.wp-block-group__inner-container {
+		@include flex-column;
+	}
 }
 
 .card__title {
