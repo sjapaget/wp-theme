@@ -2,6 +2,7 @@
 	display: block;
 	width: 100%;
 	position: fixed;
+
 	ul {
 		display: none;
 		list-style: none;
@@ -42,13 +43,11 @@
 	}
 
 	a {
-		
 		text-decoration: none;
 		color: $color__text-nav-item;
 	}
 	
 }
-
 
 .nav-menu {
 	display: flex;
@@ -59,9 +58,7 @@
 
 .menu-item a {
 	padding: 0 1em;
-	border-radius: 6px;
-	
-	
+	border-radius: 6px;	
 }
 
 @keyframes navHighlight {	

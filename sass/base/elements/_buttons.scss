@@ -10,8 +10,6 @@ input[type="submit"] {
 	margin: 1em;
 	padding: 0.6em 1em 0.4em;
 
-
-
 	&:active,
 	&:focus {
 		border-color: $color__border-button-focus;
@@ -22,7 +20,6 @@ input[type="submit"] {
 	color: $color__text-button;
 	background-color: $color__background-button;
 	border-radius: 6px;
-
 }
 
 .wp-block-button:hover {
