@@ -706,7 +706,7 @@ textarea {
 	}
 }
 
-.menu-item a:hover {
+.menu-item a:hover, .menu-item a:focus-within {
 	animation-name: navHighlight;
 	animation-duration: 0.3s;
 	animation-timing-function: linear;
@@ -733,7 +733,17 @@ textarea {
 }
 
 /* Small menu. */
-.menu-toggle,
+.menu-toggle {
+	background-color: #417D7A;
+	border: solid #f1f1f1;
+	transition: 0.3s;
+}
+
+.menu-toggle:focus {
+	background-color: #EDE6DB;
+	color: #417D7A;
+}
+
 .main-navigation.toggled ul {
 	display: block;
 	color: #417D7A;
