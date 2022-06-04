@@ -694,6 +694,10 @@ textarea {
 }
 
 @keyframes navHighlight {
+	50% {
+		position: relative;
+		left: 2px;
+	}
 	100% {
 		background-color: #417D7A;
 		color: #EDE6DB;
@@ -733,7 +737,7 @@ textarea {
 	color: #417D7A;
 }
 
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 768px) {
 	.menu-toggle {
 		display: none;
 	}

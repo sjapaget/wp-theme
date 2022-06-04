@@ -62,9 +62,13 @@
 }
 
 @keyframes navHighlight {	
+	50% {
+		position: relative;
+		left: 2px;
+	}
 	100% {
 		background-color: $color__text-nav-item;
-		color: $color__background-alt;;
+		color: $color__background-alt;
 	}
 }
 
@@ -95,6 +99,8 @@
 		}
 	}
 }
+
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -102,7 +108,7 @@
 	color: $color__background-body;
 }
 
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 768px) {
 
 	.menu-toggle {
 		display: none;
