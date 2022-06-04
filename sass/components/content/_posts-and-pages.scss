@@ -68,8 +68,7 @@
 
 @media (min-width: 768px) {
 	.entry-content {
-		display: flex;
-		flex-direction: row;
+		@include flex-row;
 	}
 
 	.card {

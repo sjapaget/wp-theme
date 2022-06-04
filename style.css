@@ -872,6 +872,8 @@ textarea {
 	.entry-content {
 		display: flex;
 		flex-direction: row;
+		justify-content: center;
+		align-items: center;
 	}
 	.card {
 		width: 25vw;
