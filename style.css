@@ -566,14 +566,16 @@ input[type="submit"]:focus {
 
 .wp-block-button__link {
 	color: #f1f1f1;
-	background-color: #EDE6DB;
+	background-color: transparent;
 	border-radius: 6px;
+	border: solid;
 }
 
-.wp-block-button:hover {
+.wp-block-button__link:hover {
 	border-radius: 6px;
 	color: #417D7A;
 	background-color: #EDE6DB;
+	border: solid transparent;
 }
 
 input[type="text"],
