@@ -569,6 +569,7 @@ input[type="submit"]:focus {
 	background-color: transparent;
 	border-radius: 6px;
 	border: solid;
+	transition: 0.5s;
 }
 
 .wp-block-button__link:hover {
@@ -576,6 +577,7 @@ input[type="submit"]:focus {
 	color: #417D7A;
 	background-color: #EDE6DB;
 	border: solid transparent;
+	font-weight: 900;
 }
 
 input[type="text"],
