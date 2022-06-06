@@ -755,6 +755,18 @@ textarea {
 	}
 	.main-navigation ul {
 		display: flex;
+		align-items: center;
+		font-size: 1.4rem;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+	.main-navigation ul li::before {
+		content: "\01F6B2";
+		color: transparent;
+		text-shadow: 0 0 #417D7A;
+	}
+	.main-navigation ul a {
+		padding: 0 0.3em;
 	}
 }
 
