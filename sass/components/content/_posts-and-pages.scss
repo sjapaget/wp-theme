@@ -59,6 +59,22 @@
 	font-family: $font__title;
 }
 
+.wp-block-image {
+	display: none;
+}
+
+/* Animations */
+
+@keyframes titleSlideIn {
+	0% {
+		transform: translateY(-100%);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+/* Media Queries */
 @media (max-width: 767px) {
 	.entry-title {
 		position: relative;
@@ -74,6 +90,44 @@
 	.card {
 		width: 25vw;
 		justify-content: space-evenly;
+		aspect-ratio: 1 / 1;
+	}
+}
+
+@media screen and (min-width:1024px) {
+	.site-main {
+		margin-top: 0;
+		display: grid;
+	}
+
+	.entry-title {
+		font-size: 7rem;
+		background: radial-gradient(#3a706d 30%, #305d5b);
+		margin: 0;
+		animation: 1s ease-in-out 0s 1 titleSlideIn;
+		grid-column: 1 / -1;
+	}
+
+	.entry-content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		justify-items: center;
+		align-items: center;
+		gap: 0;
+	}
+
+	.card {
+		grid-column: 1 / 2;
+	}
+
+	.wp-block-image {
+		display: block;
+		grid-row: 1 / 4;
+		grid-column: 2 / 3;
+		align-self: stretch;
+		margin-right: 0.5rem;
+		border-radius: 15px;
 	}
 }
 
