@@ -693,24 +693,12 @@ textarea {
 .menu-item a {
 	padding: 0 1em;
 	border-radius: 6px;
-}
-
-@keyframes navHighlight {
-	50% {
-		position: relative;
-		left: 2px;
-	}
-	100% {
-		background-color: #417D7A;
-		color: #EDE6DB;
-	}
+	box-shadow: inset 0 0 #417D7A;
 }
 
 .menu-item a:hover, .menu-item a:focus-within {
-	animation-name: navHighlight;
-	animation-duration: 0.3s;
-	animation-timing-function: linear;
-	animation-fill-mode: forwards;
+	box-shadow: inset 0 5vh #417D7A;
+	color: #EDE6DB;
 }
 
 .main-navigation {
@@ -957,6 +945,9 @@ textarea {
 		grid-column: 1 / 2;
 		width: 50vw;
 		aspect-ratio: 3 / 1;
+	}
+	.card p {
+		font-size: 1.1rem;
 	}
 	.wp-block-image {
 		display: block;
