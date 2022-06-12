@@ -935,6 +935,7 @@ textarea {
 @media screen and (min-width: 1024px) {
 	.site-main {
 		margin-top: 0;
+		margin-bottom: 2rem;
 		display: grid;
 	}
 	.entry-title {
@@ -954,6 +955,8 @@ textarea {
 	}
 	.card {
 		grid-column: 1 / 2;
+		width: 50vw;
+		aspect-ratio: 3 / 1;
 	}
 	.wp-block-image {
 		display: block;
@@ -962,6 +965,7 @@ textarea {
 		align-self: stretch;
 		margin-right: 0.5rem;
 		border-radius: 15px;
+		width: 33vw;
 	}
 }
 
