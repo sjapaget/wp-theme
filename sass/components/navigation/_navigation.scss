@@ -2,7 +2,7 @@
 	display: block;
 	width: 100%;
 	position: fixed;
-
+	
 	ul {
 		display: none;
 		list-style: none;
@@ -59,20 +59,12 @@
 .menu-item a {
 	padding: 0 1em;
 	border-radius: 6px;	
+	box-shadow: inset 0 0 $color__text-nav-item;
 }
 
-@keyframes navHighlight {	
-	100% {
-		background-color: $color__text-nav-item;
-		color: $color__background-alt;;
-	}
-}
-
-.menu-item a:hover {
-	animation-name: navHighlight;
-	animation-duration: 0.3s;
-	animation-timing-function: linear;
-	animation-fill-mode: forwards;
+.menu-item a:hover, .menu-item a:focus-within {
+	box-shadow: inset 0 5vh $color__text-nav-item;
+	color: $color__background-alt;
 }
 
 .main-navigation {
@@ -93,25 +85,48 @@
 				margin: 0 0 0.5em;
 			}
 		}
-
-
 	}
 }
+
 /* Small menu. */
-.menu-toggle,
+.menu-toggle {
+	background-color: $color__background-body;
+	border: solid $color__text-button;
+	transition: 0.3s;
+
+	&:focus {
+		background-color: $color__background-button-hover;
+		color: $color__text-button-hover;
+	}
+}
+
 .main-navigation.toggled ul {
 	display: block;
 	color: $color__background-body;
 }
 
-@media screen and (min-width: 37.5em) {
-
+@media screen and (min-width: 768px) {
+	
 	.menu-toggle {
 		display: none;
 	}
 
 	.main-navigation ul {
 		display: flex;
+		align-items: center;
+		font-size: 1.4rem;
+		font-weight: 600;
+		text-transform: uppercase;
+
+		li::before {
+			content: "\01F6B2";
+			color: transparent;
+			text-shadow: 0 0 $color__background-body;
+		}
+
+		a {
+			padding: 0 0.3em;
+		}
 	}	
 }
 
@@ -137,7 +152,6 @@
 	}
 }
 
-
 //Footer menu SCSS
 .site-footer {
     background-color: $color__background-alt;
@@ -152,4 +166,12 @@
 
 .site-info {
 	@include flex-column;
+}
+
+@media screen and (min-width: 768px) {
+	.site-info {
+		@include flex-row;
+		justify-content: center;
+		gap: 0 1em;
+	}
 }

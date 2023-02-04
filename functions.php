@@ -57,17 +57,6 @@ function ridiy_setup() {
 	}
 	add_action( 'init', 'register_my_menus' );
 
-/* Commented out in favour of function above adding multiple menus
-	
-register_nav_menus(
-		array(
-			'menu-1' => esc_html__( 'Primary', 'ridiy' ),
-			'menu-2' => esc_html__( 'Secondary', 'ridiy' ),
-		)
-	);
-
-	*/
-
 	/*
 		* Switch default core markup for search form, comment form, and comments
 		* to output valid HTML5.
